@@ -1,0 +1,153 @@
+<!--  class — além de classificar as Tags, é usada para aplicar estilo css e também para acessar com o Java Script.-->
+<div class="conteúdo">
+</div>
+<!-- contenteditable — usado para editar o conteúdo da página, porém não é mantido após salvar. -->
+<div contentedtable="true">
+</div>
+
+<!-- data-* — usado para expandir os tipos de atributos que podemos usar para fazer mais tarde lógica no Java Script , utilizado em css também. -->
+<div class="conteúdo" data-qualquercoisaaqui="">
+</div>
+
+<!-- hidden — usado para esconder uma Tag. -->
+<div class="carrinho" hidden>
+    conteúdo
+</div>
+
+<!-- id — usado apenas 1 por Tag para identificação, para também mais tarde usar no Java Script e css. -->
+<div id="texto1" style="color: red" tabindex="1" title="Titulo"><!-- apenas para ex -->
+    conteúdo
+</div>
+
+<div id="texto2" tabindex="2">
+    conteúdo
+</div>
+<!-- para repetir um nome é usa o class -->
+
+<!-- style — aplica a estilização na Tag, normalmente não se usa "style" dentro da Tag, mas sim em arquivos externos. -->
+<!-- Usado mais no css -->
+<div style="color: red"> </div>
+
+<!-- tabindex — usado para ordenar o Tab na página. -->
+<!-- title — serve para definir um título para a Tag, quando colocamos o mouse descansando em cima do conteúdo da página. -->
+<!-- Se você quiser estudar outros Atributos Globais vá ao site https://developer.mozilla.org/pt-BR/ . -->
+
+
+<!-- Aninhamento em HTML significa colocar uma tag dentro da outra, porém não é qualquer tag que podemos colocar 
+    dentro de outra, existe uma hierarquia por trás delas, por exemplo: -->
+<p>
+    <em>texto</em><!-- para deixar italico -->
+<p> texto2</p>
+</p>
+<!-- Podemos ver no exemplo acima que a tag <em></em>(usada para dar enfase em um texto) é pertencente a Tag <p></p>(usada para criar um parágrafo).
+
+Também é possível notar que há um fluxo, onde as tags são lidas por ordem de cima para baixo.
+
+Por fim o posicionamento de elementos, podemos ver que a tag <em></em> não está em uma outra linha como na tag <p></p>, existem 
+tags que quebram a linha, então mesmo que colocarmos a tag <p></p> uma do lado da outra, visualmente vai dar quebra de linha. -->
+
+
+<!-- Caracteres reservado são caracteres usados no próprio HTML, como < > & " " ' ', não podemos usar nas tags, pois dão erro, mesmo aparecendo na preview o navegador vai tentar ler esses caracteres de alguma forma que faça sentido. Para 
+    usarmos precisamos troca-los por outras formas de escrever. -->
+
+
+<p>
+    &nbsp;<!--tag p dar espaço no texto  -->
+    &lt; os espaços &gt; <br><!--tag para maior e menor -->
+    &amp;<!--tag para E comercial -->
+    <br><!-- quebra a linha -->
+    &quot; que colocamos &quot;
+    <br>
+    &apos; além das quebras de linha são
+    ignorados &apos;<!--tag p aspas simples -->
+</p>
+
+
+<!-- <li></li> — colocar os elementos da lista. <ul></ul> — para uma lista não ordenada.<ol></ol> — para uma lista ordenada. -->
+
+<h1>Suco detox</h1>
+<h2>Ingredientes:</h2>
+
+<ul><!-- nao ordenada -->
+    <li>3 folhas de couve;</li>
+    <li>1 laranjas;</li>
+    <li>1 pedacinho gengibre;</li>
+    <li>300 ml de água;</li>
+    <li>Adoçante a gosto;</li>
+    <li>Gelo a gosto.</li>
+</ul>
+
+
+<ol><!-- ordenada -->
+    <li>3 folhas de couve;</li>
+    <li>1 laranjas;</li>
+    <li>1 pedacinho gengibre;</li>
+    <li>300 ml de água;</li>
+    <li>Adoçante a gosto;</li>
+    <li>Gelo a gosto.</li>
+</ol>
+<!-- Sitaçoes -->
+
+<!-- <blockquote></blockquote> — para uma citação que você queira deixa maior, tendo uma estilização mais diferente.
+<code></code> — mostra que é um código
+
+cite — atributo usado para citar a url.
+
+<cite></cite> — tag usada para colocar o citar link direto no texto.
+
+<q></q> — citação curtas com aspas. -->
+
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    O <strong>Elemento HTML <code>&lt;blockquote&gt;</code> </strong> (ou <em>HTML Block
+        Quotation Element</em>) indica que um texto externo foi citado.
+</blockquote>
+
+<p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <cite>página MDN blockquote</cite></a>:
+</p>
+
+<!-- Abreviaçoes -->
+<!-- Elemento muito comum encontrado na web é a de abreviação, mas de alguma forma queremos mostrar a palavra inteira. -->
+
+<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr>  para estruturar nossos documentos da web.</p>
+<!-- Se colocarmos o mouse em cima da abreviação, teremos a palavra inteira. -->
+
+<!-- A tag usada para apenas colocar detalhes de contato é a tag <address></address>, não endereço em si, mas por exemplo o autor da página. -->
+
+<address>
+    <p>Renato Duarte <br>
+    <strong>São Paulo, SP</strong>
+    </p>
+</address>
+
+<!-- Usado para marcar uma lista de itens e suas descrições. -->
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação do texto</dd>
+
+    <dt>Languague</dt>
+    <dd>Linguagem com sua semântica e sintaxe....</dd>
+</dl>
+
+<!-- Representação de codigo -->
+<!-- Para representar códigos usamos as tags:
+
+<code></code> — muda a cor do conteúdo para representar código.
+
+<pre></pre> — tag para criar um bloco de código, mantém os espaços em branco. -->
+<pre>
+    <code>
+        &lt;pre&gt;
+    </code>
+</pre>
+
+<!-- <div></div> — tag usada para agrupar conteúdo.
+<span></span> — tag usada para agrupar texto, em uma ideia mais de linha. -->
+<div class="cart">
+    <span>Camiseta</span>
+    <span>r$ 99,00</span>
+</div>
